@@ -1,3 +1,4 @@
+
 const express = require('express');
 const path = require('path');
 const sqlite3 = require('sqlite3');
@@ -10,6 +11,8 @@ const dbPath = path.join(__dirname, 'college.db');
 
 let db = null;
 
+const PORT = process.env.PORT || 3000;
+
 const initializeDBAndServer = async () => {
     try {
         db = await open({
@@ -19,8 +22,8 @@ const initializeDBAndServer = async () => {
 
         console.log('Database connected successfully');
 
-        app.listen(3000, () => {
-            console.log('Server running at http://localhost:3000');
+        app.listen(PORT, () => {
+            console.log(`Server running on port ${PORT}`);
         });
     } catch (error) {
         console.log(`DB Error: ${error.message}`);
