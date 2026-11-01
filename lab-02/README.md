@@ -1,8 +1,8 @@
 # Lab 2: SQLite Database and CRUD Routes
 
-**Name:** Your Name  
-**Registration Number:** Your Registration Number  
-**Section:** Your Section
+**Name:** Mandava Roopa Santhoshi 
+**Registration Number:** 252U1R6111 
+**Section:** AIML-2B-207
 
 ## Live Deployment
 
